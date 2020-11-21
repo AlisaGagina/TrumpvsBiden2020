@@ -7,7 +7,9 @@
   - `git push https://username@github.com/AlisaGagina/TrumpvsBiden2020`
 - note 
   - should ask for a password everytime
-  - might also need to do  `git config --global user.name "username"`
+  - might also need to do
+    -`git config --global user.name "username"`
+    -`git add README.md source/ src/ data/`
 
 ## Data Collection:
  To get data from two subreddits, input all 4 args! Returns a file of length n*2
