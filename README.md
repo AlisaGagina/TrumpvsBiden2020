@@ -9,7 +9,7 @@
   - should ask for a password everytime
   - might also need to do:
     - `git config --global user.name "username"`
-    - `git add README.md source/ src/ data/`
+    - `git add newfile_not_yet_on_git`
 
 ## Data Collection:
  To get data from two subreddits, input all 4 args! Returns a file of length n*2
