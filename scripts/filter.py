@@ -7,6 +7,8 @@ def main():
     script_dir = osp.dirname(__file__)
     names = []
     titles = []
+    subreddit = []
+    urls = []
 
 
     # Extracts Json lines from the files in data and adds it to the names and title list
@@ -15,8 +17,10 @@ def main():
             lines = fin.readlines()
             names.extend([json.loads(lines[x])['data']['name'] for x in range(len(lines))])
             titles.extend([json.loads(lines[x])['data']['title'] for x in range(len(lines))])
+            subreddit.extend([json.loads(lines[x])['data']['subreddit'] for x in range(len(lines))])
+            #urls.extend([json.loads(lines[x])['data']['url'] for x in range(len(lines))])
 
-    #print(names, titles)
+    #print(len(urls))
 
     index_to_keep = [] #has the index of all lines we wanna keep
 
@@ -28,8 +32,9 @@ def main():
     #keeps data we wanna keep
     names = [names[i] for i in index_to_keep]
     titles = [titles[i] for i in index_to_keep]
+    subreddit = [subreddit[i] for i in index_to_keep]
 
-    df = pd.DataFrame({'name': names, 'title': titles})
+    df = pd.DataFrame({'name': names, 'title': titles, 'subreddit': subreddit})
     df["coding"] = ""
 
     output_file_tsv = osp.join(script_dir,'..','data','filtered_data.tsv')
