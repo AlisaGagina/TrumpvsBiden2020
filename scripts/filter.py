@@ -9,15 +9,23 @@ def main():
     titles = []
     subreddit = []
     urls = []
+    upvote_ratio = []
+    ups = []
+    downs = []
 
 
     # Extracts Json lines from the files in data and adds it to the names and title list
     for i in range(1,4):
         with open(osp.join(script_dir,'..','data',f'reddit2020112{i}.json')) as fin:
             lines = fin.readlines()
-            names.extend([json.loads(lines[x])['data']['name'] for x in range(len(lines))])
-            titles.extend([json.loads(lines[x])['data']['title'] for x in range(len(lines))])
-            subreddit.extend([json.loads(lines[x])['data']['subreddit'] for x in range(len(lines))])
+            for x in range(len(lines)):
+                data = json.loads(lines[x])['data']
+                names.append(data['name'])
+                titles.append(data['title'])
+                subreddit.append(data['subreddit'])
+                upvote_ratio.append(data['upvote_ratio'])
+                ups.append(data['ups'])
+                downs.append(data['downs'])
             #urls.extend([json.loads(lines[x])['data']['url'] for x in range(len(lines))])
 
     #print(len(urls))
@@ -33,8 +41,13 @@ def main():
     names = [names[i] for i in index_to_keep]
     titles = [titles[i] for i in index_to_keep]
     subreddit = [subreddit[i] for i in index_to_keep]
+    upvote_ratio = [upvote_ratio[i] for i in index_to_keep]
+    ups = [ups[i] for i in index_to_keep]
+    downs = [downs[i] for i in index_to_keep]
+    #politics = [1 for x in subreddit if x =='politics']
+    #print(sum(politics))
 
-    df = pd.DataFrame({'name': names, 'title': titles, 'subreddit': subreddit})
+    df = pd.DataFrame({'name': names,'subreddit': subreddit, 'title': titles, 'upvote_ratio': upvote_ratio, 'ups': ups,"downs":downs })
     df["coding"] = ""
 
     output_file_tsv = osp.join(script_dir,'..','data','filtered_data.tsv')
