@@ -8,7 +8,7 @@ def main():
     names = []
     titles = []
     subreddit = []
-    urls = []
+    #urls = []
     upvote_ratio = []
     ups = []
     downs = []
@@ -31,11 +31,14 @@ def main():
     #print(len(urls))
 
     index_to_keep = [] #has the index of all lines we wanna keep
-
+    president_names = ['donald', 'trump', 'joe', 'biden', 'president']
     #populates the index_to_keep
     for i in range(len(titles)):
-        if ("trump" or "biden" or "donald" or "joe") in titles[i].lower():
+        title = titles[i].lower()
+        if any(name in title for name in president_names):
             index_to_keep.append(i)
+
+
 
     #keeps data we wanna keep
     names = [names[i] for i in index_to_keep]
@@ -44,6 +47,7 @@ def main():
     upvote_ratio = [upvote_ratio[i] for i in index_to_keep]
     ups = [ups[i] for i in index_to_keep]
     downs = [downs[i] for i in index_to_keep]
+    #print(len(titles))
     #politics = [1 for x in subreddit if x =='politics']
     #print(sum(politics))
 
@@ -56,7 +60,7 @@ def main():
     output_file_csv = osp.join(script_dir, '..', 'data', 'filtered_data.csv')
     df.to_csv(output_file_csv, index=False)
 
-    #print(len(names),len(titles))
+
     #print(names, titles)
 
 if __name__ =='__main__':
