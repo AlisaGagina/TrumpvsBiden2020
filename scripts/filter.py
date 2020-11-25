@@ -31,7 +31,7 @@ def main():
     #print(len(urls))
 
     index_to_keep = [] #has the index of all lines we wanna keep
-    president_names = ['donald', 'trump', 'joe', 'biden', 'president']
+    president_names = ['donald', 'trump', 'joe', 'biden']
     #populates the index_to_keep
     for i in range(len(titles)):
         title = titles[i].lower()
