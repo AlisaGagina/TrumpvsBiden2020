@@ -10,8 +10,7 @@ def clean(df):
 	df=df.drop('downs', axis=1)
 	
 	#regex, lowercase
-	df['title']=df['title'].str.replace(r'[^\w\s\']+', ' ')
-	df['title']=df['title'].str.replace(r'\d+', ' ')
+	df['title']=df['title'].str.replace(r'[^a-zA-Z_-]+', ' ')
 	df['title']=df['title'].str.lower()
 	return df
 
