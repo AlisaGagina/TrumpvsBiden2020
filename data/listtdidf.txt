@@ -109,10 +109,10 @@
       "an",
       "false",
       "gop",
+      "g",
       "orderly",
       "influence",
-      "rush",
-      "limbaugh"
+      "rush"
     ],
     "conservatives": [
       "wrecks",
@@ -146,11 +146,11 @@
       "stolen",
       "conference",
       "hispanic",
+      "2",
       "georgia",
       "pa",
-      "second",
-      "electoral",
-      "washington"
+      "0",
+      "second"
     ]
   },
   "IR": {
@@ -159,9 +159,9 @@
       "world",
       "russia",
       "deal",
+      "g20",
       "iran",
       "israel",
-      "g",
       "summit",
       "putin",
       "east"
@@ -182,6 +182,7 @@
   "O": {
     "politics": [
       "lara",
+      "2022",
       "run",
       "reportedly",
       "senate",
