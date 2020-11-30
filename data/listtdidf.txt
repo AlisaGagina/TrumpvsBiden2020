@@ -10,7 +10,7 @@
       "cabinet",
       "picks",
       "tells",
-      "janet"
+      "transition"
     ],
     "conservatives": [
       "supply",
@@ -34,9 +34,9 @@
       "motors",
       "final",
       "voice",
+      "judge",
       "lawsuit",
-      "must",
-      "drug"
+      "it"
     ],
     "conservatives": [
       "tax",
@@ -57,12 +57,12 @@
       "embarrassment",
       "chris",
       "hogan",
-      "been",
+      "trump",
+      "team",
       "his",
       "gop",
-      "claims",
-      "making",
-      "their"
+      "s",
+      "claims"
     ],
     "conservatives": [
       "rallies",
@@ -81,40 +81,42 @@
     "politics": [
       "be",
       "joe",
-      "in",
-      "the",
       "s",
-      "to",
       "a",
-      "biden"
+      "biden",
+      "in",
+      "to",
+      "the"
     ],
     "conservatives": [
       "hell",
       "supporters",
       "all",
+      "assault",
       "elderly",
       "including",
       "women",
       "children",
       "cancer",
-      "charity",
-      "spent"
+      "charity"
     ]
   },
   "C": {
     "politics": [
       "making",
+      "gop",
+      "trump",
       "giuliani",
       "him",
       "an",
       "false",
-      "gop",
-      "g",
+      "of",
       "orderly",
-      "influence",
-      "rush"
+      "influence"
     ],
     "conservatives": [
+      "hill",
+      "concha",
       "wrecks",
       "failed",
       "nevertrump",
@@ -122,9 +124,7 @@
       "project",
       "tabloid",
       "mocked",
-      "stinky",
-      "ivanka",
-      "grasping"
+      "stinky"
     ]
   },
   "E": {
@@ -135,22 +135,22 @@
       "state",
       "results",
       "another",
+      "win",
       "blow",
       "certify",
-      "despite",
-      "victory"
+      "despite"
     ],
     "conservatives": [
       "votes",
       "press",
       "stolen",
+      "georgia",
       "conference",
       "hispanic",
-      "2",
-      "georgia",
       "pa",
-      "0",
-      "second"
+      "second",
+      "electoral",
+      "washington"
     ]
   },
   "IR": {
@@ -159,12 +159,12 @@
       "world",
       "russia",
       "deal",
-      "g20",
       "iran",
       "israel",
+      "g20",
       "summit",
-      "putin",
-      "east"
+      "leaders",
+      "putin"
     ],
     "conservatives": [
       "chinese",
@@ -182,7 +182,6 @@
   "O": {
     "politics": [
       "lara",
-      "2022",
       "run",
       "reportedly",
       "senate",
