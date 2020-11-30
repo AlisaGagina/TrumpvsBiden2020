@@ -11,8 +11,10 @@ def clean(df):
 	df=df.drop('downs', axis=1)
 	
 	#regex, lowercase
-	#df['title']=df['title'].str.replace(r'[^a-zA-Z_-]+', ' ')
-	df['title']=df['title'].str.replace(r'[^G20a-zA-Z_-]+', ' ')
+	df['title']=df['title'].str.replace(r'[^a-zA-Z_-]+', ' ')
+	#df['title']=df['title'].str.replace(r'[^G20a-zA-Z_-]+', ' ')
+
+	
 	df['title']=df['title'].str.lower()
 	return df
 
@@ -66,8 +68,7 @@ def alisatdidf(word, subreddit, topic, d):
 		for sub, words in subreddit.items():
 			if word in words:
 				freqall=freqall+1
-	score = freqone* math.log10(12/freqall)
-	print(score)
+	score = freqone* math.log10(16/freqall)
 	return score
 
 def alisascores(d):
