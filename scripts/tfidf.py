@@ -26,11 +26,16 @@ def tfidf(df):
 	for (key,value) in subCount.items():
 		tfidf[key]=value
 		for (code,coding) in value.items():
-			tfidf[key][code]=math.log10(total[code]/coding)
+			tfidf[key][code]=coding*(math.log(aggregate(total)/total[code]))
 	for (key,value) in subCount.items():
 		print(key)
 		for (code,coding) in value.items():
 			print("\t"+str(code)+", "+str(coding))
+def aggregate(codings):
+	total = 0
+	for i in codings:
+		total += codings[i]
+	return total
 
 def main():
 	total={}
