@@ -11,7 +11,8 @@ def clean(df):
 	df=df.drop('downs', axis=1)
 	
 	#regex, lowercase
-	df['title']=df['title'].str.replace(r'[^a-zA-Z_-]+', ' ')
+	#df['title']=df['title'].str.replace(r'[^a-zA-Z_-]+', ' ')
+	df['title']=df['title'].str.replace(r'[^G20a-zA-Z_-]+', ' ')
 	df['title']=df['title'].str.lower()
 	return df
 
@@ -36,7 +37,7 @@ def getwordcounts(df):
 			if words[word]>=2:
 				abovefive[sub][word]=words[word]
 	return abovefive
-
+'''
 def tfidf(count,idf):
 	errors = []
 	tfidf = {}
@@ -56,12 +57,39 @@ def tfidf(count,idf):
 			tfidf[topic][sub]=dict(Counter(dic2).most_common(10))
 
 	return tfidf
+'''
+
+def alisatdidf(word, subreddit, topic, d):
+	freqone=d[topic][subreddit][word]	
+	freqall=0
+	for topic, subreddit in d.items():
+		for sub, words in subreddit.items():
+			if word in words:
+				freqall=freqall+1
+	score = freqone* math.log10(12/freqall)
+	print(score)
+	return score
+
+def alisascores(d):
+	scores= {'T':{'politics':{},'conservatives':{}},'D':{'politics':{},'conservatives':{}},'AT':{'politics':{},'conservatives':{}},
+	 'AB':{'politics':{},'conservatives':{}}, 'C':{'politics':{},'conservatives':{}}, 'E':{'politics':{},'conservatives':{}}, 
+	 'IR':{'politics':{},'conservatives':{}}, "O":{'politics':{},'conservatives':{}}}
+	for topic, subreddit in d.items():
+		for sub, words in subreddit.items():
+			for word in words:
+				#get score
+				scores[topic][sub][word]=alisatdidf(word, sub, topic, d)
+	for topic, subreddit in scores.items():
+		for sub, words in subreddit.items():
+			#sort in descending order
+			scores[topic][sub] = dict( sorted(scores[topic][sub].items(), key=lambda item: item[1], reverse=True))
+	return scores
+
 def main():
 	
 	parser = argparse.ArgumentParser()
 	parser.add_argument("input", help="shuffled.tsv file")
 	parser.add_argument('-o', '--output', help='output file')
-	parser.add_argument('idf')
 
 	args = parser.parse_args()
 	df = pd.read_csv(args.input, sep='\t')	
@@ -71,13 +99,20 @@ def main():
 	for topic in topics:
 		posts = df[df['coding'] == topic]
 		count[topic]=getwordcounts(posts)
-	with open(args.idf,'r') as idf:
-		idfDic = json.load(idf)
-		final = tfidf(count,idfDic)
-		
-	
+	scores=alisascores(count)
+	result={'T':{'politics':{},'conservatives':{}},'D':{'politics':{},'conservatives':{}},'AT':{'politics':{},'conservatives':{}},
+	 'AB':{'politics':{},'conservatives':{}}, 'C':{'politics':{},'conservatives':{}}, 'E':{'politics':{},'conservatives':{}}, 
+	 'IR':{'politics':{},'conservatives':{}}, "O":{'politics':{},'conservatives':{}}}
+	for topic, subreddit in scores.items():
+		for sub, words in subreddit.items():
+			
+			l=[]	
+			for i in list(scores[topic][sub])[0:10]:	
+				l.append(i)
+			result[topic][sub]=l
+	print(result)
 	with open(args.output, 'w') as f:
-		json.dump(final, f)
+		json.dump(result, f)
 	
 if __name__ == '__main__':
 	main()
