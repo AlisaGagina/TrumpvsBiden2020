@@ -15,6 +15,7 @@ def idf(row, dic):
 			dic[word] = 1
 		else:
 			dic[word] += 1
+			dic['total'] += 1
 	
 
 def main():
@@ -23,6 +24,7 @@ def main():
 	parser.add_argument('output')
 	args = parser.parse_args()
 	words = {}
+	words['total'] = 0
 	words2 = {}
 	with open(args.input,'r') as f:
 		for i in f:
