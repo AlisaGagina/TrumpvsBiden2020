@@ -6,7 +6,7 @@ import re
 import json
 
 def cleaned(row):
-	row = re.sub("[^a-zA-Z0-9_']+",' ', row)
+	row = re.sub("[^a-zA-Z_-]+",' ', row)
 	return row.lower()
 	
 def idf(row, dic):
