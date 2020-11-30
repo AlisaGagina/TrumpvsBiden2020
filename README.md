@@ -23,4 +23,12 @@
  - "title": "Trump privately plots his next act \u2014 including a potential 2024 rematch"
  - "upvote_ratio": 0.67
  - "ups": 6, "downs": 0
+ 
+ ## Statistics ideas:
+ - average upvote per topic
+ - pie chart of topics / subreddit
+ - top 20 titles  (or topics)/ subredddit (or all) 
+   - top sorted by like amount
+ - AB, AT, C differences across the two subreddits, and the average reaction to them (upvote)
+ 
 
