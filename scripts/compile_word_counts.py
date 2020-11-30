@@ -1,7 +1,8 @@
 import argparse
 import pandas as pd
 import json
-
+import math
+from collections import Counter
 
 def clean(df):
 	#drop unneeded columns
@@ -36,12 +37,31 @@ def getwordcounts(df):
 				abovefive[sub][word]=words[word]
 	return abovefive
 
+def tfidf(count,idf):
+	errors = []
+	tfidf = {}
+	for (topic,dic) in count.items():
+		tfidf[topic]={}
+		for sub in dic:
+			tfidf[topic][sub]={}
+			for (word,count) in dic[sub].items():
+				if word not in idf:
+					errors.append(word)
+					continue
+				else:
+					tfidf[topic][sub][word]=count*math.log(idf['total']/idf[word])					
+	print(errors)
+	for (topic,dic) in tfidf.items():
+		for (sub,dic2) in dic.items():
+			tfidf[topic][sub]=dict(Counter(dic2).most_common(10))
 
+	return tfidf
 def main():
 	
 	parser = argparse.ArgumentParser()
 	parser.add_argument("input", help="shuffled.tsv file")
 	parser.add_argument('-o', '--output', help='output file')
+	parser.add_argument('idf')
 
 	args = parser.parse_args()
 	df = pd.read_csv(args.input, sep='\t')	
@@ -51,10 +71,13 @@ def main():
 	for topic in topics:
 		posts = df[df['coding'] == topic]
 		count[topic]=getwordcounts(posts)
-	
+	with open(args.idf,'r') as idf:
+		idfDic = json.load(idf)
+		final = tfidf(count,idfDic)
+		
 	
 	with open(args.output, 'w') as f:
-		json.dump(count, f)
+		json.dump(final, f)
 	
 if __name__ == '__main__':
 	main()
