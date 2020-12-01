@@ -1,192 +1,192 @@
 {
-  "T": {
-    "politics": [
-      "gsa",
-      "begin",
-      "secretary",
-      "treasury",
-      "yellen",
-      "formally",
-      "cabinet",
-      "picks",
-      "tells",
-      "transition"
-    ],
-    "conservatives": [
-      "supply",
-      "commander",
-      "xavier",
-      "becerra",
-      "possible",
-      "ag",
-      "decriminalized",
-      "believes",
-      "amendment",
-      "design"
-    ]
-  },
-  "D": {
-    "politics": [
-      "climate",
-      "work",
-      "wants",
-      "general",
-      "motors",
-      "final",
-      "voice",
-      "judge",
-      "lawsuit",
-      "it"
-    ],
-    "conservatives": [
-      "tax",
-      "student",
-      "americans",
-      "cancel",
-      "some",
-      "debt",
-      "via",
-      "executive",
-      "order",
-      "impose"
-    ]
-  },
-  "AT": {
-    "politics": [
-      "christie",
-      "embarrassment",
-      "chris",
-      "hogan",
-      "trump",
-      "team",
-      "his",
-      "gop",
-      "s",
-      "claims"
-    ],
-    "conservatives": [
-      "rallies",
-      "compares",
-      "dictator",
-      "interview",
-      "likens",
-      "re-education",
-      "deprogram",
-      "thinks",
-      "suggests",
-      "obama"
-    ]
-  },
-  "AB": {
-    "politics": [
-      "be",
-      "joe",
-      "s",
-      "a",
-      "biden",
-      "in",
-      "to",
-      "the"
-    ],
-    "conservatives": [
-      "hell",
-      "supporters",
-      "all",
-      "assault",
-      "elderly",
-      "including",
-      "women",
-      "children",
-      "cancer",
-      "charity"
-    ]
-  },
-  "C": {
-    "politics": [
-      "making",
-      "gop",
-      "trump",
-      "giuliani",
-      "him",
-      "an",
-      "false",
-      "of",
-      "orderly",
-      "influence"
-    ],
-    "conservatives": [
-      "hill",
-      "concha",
-      "wrecks",
-      "failed",
-      "nevertrump",
-      "lincoln",
-      "project",
-      "tabloid",
-      "mocked",
-      "stinky"
-    ]
-  },
-  "E": {
-    "politics": [
-      "certifies",
-      "michigan",
-      "board",
-      "state",
-      "results",
-      "another",
-      "win",
-      "blow",
-      "certify",
-      "despite"
-    ],
-    "conservatives": [
-      "votes",
-      "press",
-      "stolen",
-      "georgia",
-      "conference",
-      "hispanic",
-      "pa",
-      "second",
-      "electoral",
-      "washington"
-    ]
-  },
-  "IR": {
-    "politics": [
-      "middle",
-      "world",
-      "russia",
-      "deal",
-      "iran",
-      "israel",
-      "g20",
-      "summit",
-      "leaders",
-      "putin"
-    ],
-    "conservatives": [
-      "chinese",
-      "china",
-      "beijing",
-      "were",
-      "government",
-      "apology",
-      "likening",
-      "tenure",
-      "nazi",
-      "expose"
-    ]
-  },
-  "O": {
-    "politics": [
-      "lara",
-      "run",
-      "reportedly",
-      "senate",
-      "trump"
-    ],
-    "conservatives": []
-  }
+    "T": {
+        "politics": {
+            "gsa": 46.96,
+            "begin": 44.55,
+            "secretary": 32.51,
+            "treasury": 28.9,
+            "yellen": 27.69,
+            "formally": 27.09,
+            "cabinet": 25.29,
+            "picks": 22.88,
+            "tells": 22.54,
+            "transition": 20.46
+        },
+        "conservatives": {
+            "supply": 3.61,
+            "commander": 3.61,
+            "xavier": 2.41,
+            "becerra": 2.41,
+            "possible": 2.41,
+            "ag": 2.41,
+            "decriminalized": 2.41,
+            "believes": 2.41,
+            "amendment": 2.41,
+            "design": 2.41
+        }
+    },
+    "D": {
+        "politics": {
+            "climate": 6.32,
+            "work": 4.82,
+            "wants": 3.61,
+            "general": 3.61,
+            "motors": 3.61,
+            "final": 3.61,
+            "voice": 3.61,
+            "judge": 3.03,
+            "lawsuit": 3.01,
+            "it": 2.87
+        },
+        "conservatives": {
+            "tax": 9.63,
+            "student": 7.22,
+            "americans": 7.22,
+            "cancel": 3.61,
+            "some": 3.61,
+            "debt": 3.61,
+            "via": 3.61,
+            "executive": 3.61,
+            "order": 3.61,
+            "impose": 3.61
+        }
+    },
+    "AT": {
+        "politics": {
+            "christie": 18.06,
+            "embarrassment": 18.06,
+            "chris": 15.65,
+            "hogan": 9.63,
+            "trump": 9.45,
+            "team": 8.26,
+            "his": 8.08,
+            "gop": 8.08,
+            "s": 7.85,
+            "claims": 7.27
+        },
+        "conservatives": {
+            "rallies": 8.43,
+            "compares": 7.22,
+            "dictator": 7.22,
+            "interview": 7.22,
+            "likens": 6.02,
+            "re-education": 6.02,
+            "deprogram": 6.02,
+            "thinks": 4.82,
+            "suggests": 4.82,
+            "obama": 4.36
+        }
+    },
+    "AB": {
+        "politics": {
+            "be": 0.41,
+            "joe": 0.41,
+            "s": 0.36,
+            "a": 0.23,
+            "biden": 0.23,
+            "in": 0.18,
+            "to": 0.17,
+            "the": 0.12
+        },
+        "conservatives": {
+            "hell": 4.82,
+            "supporters": 4.55,
+            "all": 4.21,
+            "assault": 3.61,
+            "elderly": 3.61,
+            "including": 3.61,
+            "women": 3.61,
+            "children": 3.61,
+            "cancer": 3.61,
+            "charity": 3.61
+        }
+    },
+    "C": {
+        "politics": {
+            "making": 3.61,
+            "gop": 3.03,
+            "trump": 2.96,
+            "giuliani": 2.91,
+            "him": 2.91,
+            "an": 2.71,
+            "false": 2.71,
+            "of": 2.62,
+            "orderly": 2.41,
+            "influence": 2.41
+        },
+        "conservatives": {
+            "hill": 3.61,
+            "concha": 3.61,
+            "wrecks": 3.61,
+            "failed": 3.61,
+            "nevertrump": 3.61,
+            "lincoln": 3.61,
+            "project": 3.61,
+            "tabloid": 3.61,
+            "mocked": 3.61,
+            "stinky": 3.61
+        }
+    },
+    "E": {
+        "politics": {
+            "certifies": 46.96,
+            "michigan": 40.94,
+            "board": 29.8,
+            "state": 24.38,
+            "results": 23.26,
+            "another": 19.27,
+            "win": 17.89,
+            "blow": 16.86,
+            "certify": 16.86,
+            "despite": 16.86
+        },
+        "conservatives": {
+            "votes": 12.04,
+            "press": 8.43,
+            "stolen": 8.43,
+            "georgia": 7.83,
+            "conference": 7.22,
+            "hispanic": 7.22,
+            "pa": 6.32,
+            "second": 6.02,
+            "electoral": 5.42,
+            "washington": 4.82
+        }
+    },
+    "IR": {
+        "politics": {
+            "middle": 6.02,
+            "world": 6.02,
+            "russia": 4.82,
+            "deal": 4.82,
+            "iran": 4.52,
+            "israel": 4.52,
+            "g": 4.21,
+            "summit": 3.61,
+            "leaders": 3.61,
+            "putin": 3.61
+        },
+        "conservatives": {
+            "chinese": 10.84,
+            "china": 8.13,
+            "beijing": 7.22,
+            "were": 5.42,
+            "government": 4.36,
+            "apology": 3.61,
+            "likening": 3.61,
+            "tenure": 3.61,
+            "nazi": 3.61,
+            "expose": 3.61
+        }
+    },
+    "O": {
+        "politics": {
+            "lara": 2.41,
+            "run": 2.41,
+            "reportedly": 1.81,
+            "senate": 1.45,
+            "trump": 0.17
+        },
+        "conservatives": {}
+    }
 }
