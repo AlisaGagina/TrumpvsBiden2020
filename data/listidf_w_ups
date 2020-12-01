@@ -1,0 +1,190 @@
+{
+  "T": {
+    "politics": {
+      "gsa": 71.33,
+      "begin": 67.29,
+      "transition": 52.17,
+      "yellen": 40.39,
+      "formally": 40.29,
+      "janet": 36.39,
+      "first": 34.88,
+      "treasury": 31.75,
+      "picks": 31.05,
+      "cabinet": 30.01
+    },
+    "conservatives": {
+      "supply": 4.41,
+      "commander": 4.41,
+      "plan": 2.21,
+      "national": 1.85,
+      "should": 1.38,
+      "new": 1.1,
+      "biden": 0.99,
+      "has": 0.8,
+      "the": 0.22,
+      "for": 0.21
+    }
+  },
+  "D": {
+    "politics": {
+      "climate": 8.91,
+      "voice": 7.27,
+      "into": 6.89,
+      "economic": 6.8,
+      "final": 6.71,
+      "motors": 6.5,
+      "percent": 6.36,
+      "work": 6.31,
+      "biden": 6,
+      "protecting": 5.98
+    },
+    "conservatives": {
+      "tax": 7.29,
+      "americans": 6.25,
+      "student": 6.23,
+      "delivers": 5.46,
+      "remarks": 5.46,
+      "delivering": 5.45,
+      "lower": 5.45,
+      "prescription": 5.45,
+      "drug": 5.45,
+      "prices": 5.45
+    }
+  },
+  "AT": {
+    "politics": {
+      "christie": 47.62,
+      "embarrassment": 47.62,
+      "chris": 41.77,
+      "trump": 24.58,
+      "team": 24.53,
+      "election": 22.77,
+      "national": 21.49,
+      "legal": 20.24,
+      "calls": 19.97,
+      "gop": 19.66
+    },
+    "conservatives": {
+      "re-education": 8.19,
+      "deprogram": 8.19,
+      "rallies": 8.14,
+      "people": 6.59,
+      "compares": 5.28,
+      "dictator": 5.28,
+      "interview": 5.28,
+      "suggests": 4.93,
+      "thinks": 4.85,
+      "supporters": 4.46
+    }
+  },
+  "AB": {
+    "politics": {
+      "ceased": 3.4,
+      "cult": 3.4,
+      "fiery": 3.4,
+      "rahm": 3.19,
+      "emanuel": 3.19,
+      "choice": 3.19,
+      "slap": 3.19,
+      "rebuke": 2.55,
+      "considered": 2.39,
+      "cabinet": 2.39
+    },
+    "conservatives": {
+      "cancer": 8.7,
+      "charity": 8.7,
+      "millions": 8.7,
+      "spent": 8.7,
+      "salaries": 8.7,
+      "nothing": 8.7,
+      "research": 8.7,
+      "rioter": 7.76,
+      "punched": 7.76,
+      "supporter": 7.76
+    }
+  },
+  "C": {
+    "politics": {
+      "here": 9.22,
+      "shame": 8.42,
+      "making": 7.98,
+      "orderly": 7.71,
+      "false": 7.66,
+      "her": 7.5,
+      "giuliani": 7.26,
+      "may": 6.98,
+      "trump": 6.04,
+      "him": 6.04
+    },
+    "conservatives": {
+      "strange": 5.73,
+      "devin": 5.73,
+      "nunes": 5.73,
+      "lack": 5.73,
+      "confidence": 5.73,
+      "hill": 5.06,
+      "concha": 5.06,
+      "wrecks": 4.21,
+      "nevertrump": 4.21,
+      "lincoln": 4.21
+    }
+  },
+  "E": {
+    "politics": {
+      "certifies": 95.94,
+      "michigan": 73.67,
+      "results": 64.44,
+      "win": 52.84,
+      "election": 47.62,
+      "board": 47.29,
+      "recount": 38.31,
+      "victory": 34.17,
+      "another": 30.85,
+      "state": 30.77
+    },
+    "conservatives": {
+      "votes": 14.51,
+      "hispanic": 12.11,
+      "lin": 9.85,
+      "wood": 9.85,
+      "smoking": 9.85,
+      "guns": 9.85,
+      "confident": 9.85,
+      "georgia": 9.81,
+      "stolen": 9.35,
+      "races": 9.33
+    }
+  },
+  "IR": {
+    "politics": {
+      "g20": 11.47,
+      "world": 11.41,
+      "russia": 10.52,
+      "israel": 8.72,
+      "leaders": 7.61,
+      "summit": 7.11,
+      "middle": 6.99,
+      "venezuelan": 6.72,
+      "g-20": 6.67,
+      "pompeo": 6.27
+    },
+    "conservatives": {
+      "chinese": 20.24,
+      "expose": 9.77,
+      "government": 9.77,
+      "penetrate": 9.77,
+      "institutions": 9.77,
+      "china": 9.06,
+      "hunter": 6.48,
+      "deep": 6.48,
+      "ties": 6.48,
+      "party-linked": 6.48
+    }
+  },
+  "O": {
+    "politics": {
+      "reportedly": 2.48
+    },
+    "conservatives": {}
+  }
+}
