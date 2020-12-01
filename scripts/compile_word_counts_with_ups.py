@@ -6,7 +6,7 @@ from collections import Counter
 
 def clean(df):
 	#drop unneeded columns
-	df=df.drop('ups', axis=1)
+	#df=df.drop('ups', axis=1)
 	df=df.drop('upvote_ratio', axis=1)
 	df=df.drop('downs', axis=1)
 	
@@ -25,6 +25,7 @@ def getwordcounts(df):
 	for index,row in df.iterrows():
 		sub=row['subreddit']
 		t=row['title']
+		up=int(row['ups'])
 		#words = t.split()
 		words = [ x for x in t.split() if x.isnumeric() ==False and len(x)>2 ]
 
@@ -32,9 +33,9 @@ def getwordcounts(df):
 			#print(word)
 
 			if (word not in count[sub]):
-				count[sub][word] = 1
+				count[sub][word] = 1*math.log10(up+.01)
 			else:
-				count[sub][word] += 1
+				count[sub][word] += 1*math.log10(up+.01)
 	abovefive={'politics':{}, 'conservatives':{}}
 	#get counts above four
 	for sub, words in count.items():
