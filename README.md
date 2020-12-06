@@ -32,7 +32,7 @@ The following are just notes through out the process:
  ## Topics to annotate:
  International Relations(IR), Anti-Trump(AT), Anti-Biden(AB), Transition(T), Domestic Policy(D), Elections(E), Commentary(C) and Other(O)
  We perforemed three different tf-idf analyses to categorie the distinct words in each category.
- - See `collect_word_counts_david.py` (topics only), `collect_word_counts.py` (topics and subreddits combined), `collect_word_counts_upvotes.py` (topics and subreddits combined with ups to represent popularty)
+ - See `compile_word_counts_derek.py` (topics only), `compile_word_counts.py` (topics and subreddits combined), `compile_word_counts_upvotes.py` (topics and subreddits combined with ups to represent popularty)
  
  ### Statistics ideas:
  - average upvote per topic
