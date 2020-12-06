@@ -1,5 +1,5 @@
 # TrumpvsBiden2020  
-We wanted to look into the aftermath of the 2020 election. We acquired and annotated 2000 posts from reddit over the course of 3 days. We then analyed the topics that the reddit users were most engaged in regards to the presidential candidates Trump and Biden in our research. 
+We wanted to look into the aftermath of the 2020 election. We acquired and annotated 2000 posts from reddit over the course of 3 days. We then analyzed the topics that the reddit users were most engaged in regards to the presidential candidates Trump and Biden. 
 
 The following are just notes through out the process:
 ## Git
