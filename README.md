@@ -1,5 +1,7 @@
-# TrumpvsBiden2020   
+# TrumpvsBiden2020  
+We wanted to look into the aftermath of the 2020 election. We acquired and annotated 2000 posts from reddit over the course of 3 days. We then analyed the topics that the reddit users were most enmgaged in our research. 
 
+The following are just notes through out the process:
 ## Git
 - code
   - `git clone https://username@github.com/AlisaGagina/TrumpvsBiden2020`
@@ -24,7 +26,15 @@
  - "upvote_ratio": 0.67
  - "ups": 6, "downs": 0
  
- ## Statistics ideas:
+ ### Cleaning data
+  was done in filter.py and shuffle.py
+ 
+ ## Topics to annotate:
+ International Relations(IR), Anti-Trump(AT), Anti-Biden(AB), Transition(T), Domestic Policy(D), Elections(E), Commentary(C) and Other(O)
+ We perforemed three different tf-idf analyses to categorie the distinct words in each category.
+ - See `collect_word_counts_david.py` (topics only), `collect_word_counts.py` (topics and subreddits combined), `collect_word_counts_upvotes.py` (topics and subreddits combined with ups to represent popularty)
+ 
+ ### Statistics ideas:
  - average upvote per topic
  - pie chart of topics / subreddit
  - top 20 titles  (or topics)/ subredddit (or all) 
